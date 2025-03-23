@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 100px;
+    @media (max-width: 375px) {
+        padding: 0;
+    }
+}

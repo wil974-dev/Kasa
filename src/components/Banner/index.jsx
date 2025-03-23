@@ -1,15 +1,10 @@
-import fondBannerRivage from '../../assets/image/fond_banner_rivage.png';
 import './Banner.scss';
 
-function Banner() {
+function Banner({ img, descriptionImg, title }) {
     return (
         <div className="banner">
-            <img
-                src={fondBannerRivage}
-                alt="Image d'un rivage sauvage"
-                className="banner__img"
-            />
-            <h1 className="banner__titre">Chez vous, partout et ailleurs</h1>
+            <img src={img} alt={descriptionImg} className="banner__img" />
+            <h1 className="banner__titre">{title}</h1>
         </div>
     );
 }

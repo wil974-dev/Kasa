@@ -1,0 +1,36 @@
+.collapse {
+    &__header {
+        display: flex;
+        background-color: #ff6060;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        height: 50px;
+    }
+
+    &__title {
+        color: white;
+        margin-left: 10px;
+    }
+    &__chevron {
+        color: white;
+        margin-right: 10px;
+        transition: transform 200ms ease;
+        &--open {
+            transform: rotate(-180deg);
+            transition: transform 200ms ease;
+        }
+    }
+    &__content {
+        padding: 0 10px;
+        overflow: hidden;
+        background-color: #f6f6f6;
+        max-height: 0;
+        transition: all 400ms ease-in;
+        &--open {
+            max-height: 500px;
+            padding: 10px 10px;
+            transition: all 400ms ease-in;
+        }
+    }
+}
