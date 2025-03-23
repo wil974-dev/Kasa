@@ -1,0 +1,22 @@
+.banner {
+    position: relative;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+    }
+    &__titre {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+}

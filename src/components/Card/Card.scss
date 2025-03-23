@@ -1,0 +1,35 @@
+.card {
+    position: relative;
+    //min-height: 280px;
+    //min-width: 280px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    overflow: hidden;
+    &__title {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0; // top:0, right:0, bottom:0, left:0
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+        z-index: 1;
+    }
+    @media (max-width: 375px) {
+        aspect-ratio: 1/0.9;
+    }
+}
