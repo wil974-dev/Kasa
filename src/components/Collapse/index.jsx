@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import './Collapse.scss';
 
+/**
+ * Composant Collapse
+ * Affiche une barre déroulante qui s'ouvre et se ferme en réaction au clic.
+ *
+ * @param {Object} props - Les propriétés du composant Collapse.
+ * @param {string} props.title - Le titre du menu déroulant.
+ * @param {string} props.content - Le contenu du menu déroulant.
+ * @returns {JSX.Element} Le JSX du composant Collapse.
+ */
 function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
 

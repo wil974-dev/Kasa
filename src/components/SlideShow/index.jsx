@@ -3,6 +3,15 @@ import arrowLeft from '../../assets/logo/arrow_left.png';
 import { useState } from 'react';
 import './SlideShow.scss';
 
+/**
+ * Composant SlideShow
+ * Affiche un carrousel d'images.
+ *
+ * @param {Object} props - Les propriétés du composant SlideShow.
+ * @param {string[]} props.listPicture - Un tableau d'url pour afficher les photos.
+ * @param {string} props.title - titre utilisé pour la propriété alt.
+ * @returns {JSX.Element} le JSX du composant SlideShow.
+ */
 function SlideShow({ listPicture, title }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const total = listPicture.length;

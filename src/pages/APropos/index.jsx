@@ -3,6 +3,12 @@ import FondBannerMontagne from '../../assets/image/fond_banner_montagne.png';
 import Collapse from '../../components/Collapse';
 import './APropos.scss';
 
+/**
+ * Page APropos
+ * Affiche la page a propos du site contenant divers éléments.
+ *
+ * @returns {JSX.Element} Le JSX du composant APropos.
+ */
 function APropos() {
     return (
         <>

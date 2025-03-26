@@ -3,10 +3,14 @@ import ReactDom from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import APropos from '../../pages/APropos';
 import Error from '../../pages/Error';
-import FicheLogement from '../../pages/FicheLogement';
+import AccomodationSheet from '../../pages/AccomodationSheet';
 import Home from '../../pages/Home';
 import Layout from '../Layout';
 
+/**
+ * Router du projet
+ * @returns {JSX.Element} Le JSX du composant Collapse.
+ */
 function AppRouter() {
     return (
         <>
@@ -17,8 +21,8 @@ function AppRouter() {
                         <Route path="/APropos" element={<APropos />} />
                         <Route path="*" element={<Error />} />
                         <Route
-                            path="/FicheLogement/:id"
-                            element={<FicheLogement />}
+                            path="/AccomodationSheet/:id"
+                            element={<AccomodationSheet />}
                         />
                     </Routes>
                 </Layout>

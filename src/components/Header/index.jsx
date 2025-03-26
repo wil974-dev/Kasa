@@ -2,6 +2,12 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo/logo_Kasa.png';
 import './Header.scss';
 
+/**
+ * Composant Header
+ * Affiche l'en-tête de page du site, avec un logo et la barre de navigation.
+ *
+ * @returns {JSX.Element} Le JSX du composant Header.
+ */
 function Header() {
     return (
         <header className="header">

@@ -1,12 +1,17 @@
 import './Card.scss';
 
-function handleClick(id) {
-    console.log(id);
-}
-
-function Card({ cover, title, id }) {
+/**
+ * Composant Card
+ * Affiche une carte avec une photo et un titre.
+ *
+ * @param {Object} props - Les propriétés du composant Card.
+ * @param {string} props.cover - L'url de l'image à afficher.
+ * @param {string} props.title - Le titre de l'image pour l'attribut alt et l'afficher sur la card.
+ * @returns {JSX.Element} Le JSX du composant Card.
+ */
+function Card({ cover, title }) {
     return (
-        <div className="card" onClick={() => handleClick(id)}>
+        <div className="card">
             <img src={cover} alt={title} className="card__img" />
             <h2 className="card__title">{title}</h2>
         </div>
