@@ -3,7 +3,7 @@ import './Collapse.scss';
 
 /**
  * Composant Collapse
- * Affiche une barre déroulante qui s'ouvre et se ferme en réaction au clic.
+ * Affiche une menu déroulante qui s'ouvre et se ferme en réaction au clic.
  *
  * @param {Object} props - Les propriétés du composant Collapse.
  * @param {string} props.title - Le titre du menu déroulant.
@@ -15,6 +15,26 @@ function Collapse({ title, content }) {
 
     function handleClick() {
         isOpen === true ? setIsOpen(false) : setIsOpen(true);
+    }
+    /**
+     * Fonction pour afficher le contenu en fonction du titre.
+     * Soit en liste si le titre est "Équipements" sinon il retourne le
+     * contenu normalement.
+     *
+     * @returns Retourne le contenue agencer en fonction de son contenu.
+     */
+    function printList() {
+        if (title === 'Équipements') {
+            return (
+                <ul>
+                    {content.map((element, index) => (
+                        <li key={index}>{element}</li>
+                    ))}
+                </ul>
+            );
+        } else {
+            return <>{content}</>;
+        }
     }
 
     return (
@@ -30,15 +50,15 @@ function Collapse({ title, content }) {
                         }
                     ></i>
                 </div>
-                <p
+                <div
                     className={
                         isOpen === false
                             ? 'collapse__content'
                             : 'collapse__content collapse__content--open'
                     }
                 >
-                    {content}
-                </p>
+                    {printList()}
+                </div>
             </div>
         </>
     );

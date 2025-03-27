@@ -5,15 +5,24 @@
     gap: 25px;
     height: 150px;
     background-color: black;
+    @media (max-width: 375px) {
+        height: 200px;
+    }
     &__logo {
         margin-top: 50px;
         color: white;
         height: 30px;
         object-fit: contain;
+        @media (max-width: 375px) {
+            margin-top: 60px;
+        }
     }
     &__text {
         color: white;
         margin: 10px;
+        @media (max-width: 375px) {
+            width: 130px;
+        }
     }
     @media (max-width: 375px) {
         gap: 0;

@@ -15,6 +15,11 @@
         top: 40%;
         background-color: transparent;
         border: none;
+        @media (max-width: 375px) {
+            width: 15px;
+            height: 30px;
+            top: 50%;
+        }
     }
     &__arrowright {
         position: absolute;
@@ -22,11 +27,26 @@
         top: 40%;
         background-color: transparent;
         border: none;
+        @media (max-width: 375px) {
+            width: 15px;
+            height: 30px;
+            top: 50%;
+        }
     }
     &__number {
         position: absolute;
         right: 50%;
         bottom: 15px;
         color: rgb(255, 255, 255);
+    }
+    &__chevronLeft {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__chevronRight {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
     }
 }
