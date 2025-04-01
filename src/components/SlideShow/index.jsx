@@ -26,14 +26,22 @@ function SlideShow({ listPicture, title }) {
             prevIndex === 0 ? total - 1 : prevIndex - 1
         );
     };
+
     return (
         <>
             <div className="slideshow">
-                <img
-                    src={listPicture[currentIndex]}
-                    alt={title}
-                    className="slideshow__img"
-                />
+                {listPicture.map((src, index) => (
+                    <img
+                        key={index}
+                        src={src}
+                        alt={`${title} ${index + 1}`}
+                        className={`slideshow__img ${
+                            index === currentIndex
+                                ? 'slideshow__img--active'
+                                : 'slideshow__img--hidden'
+                        }`}
+                    />
+                ))}
 
                 {total > 1 && (
                     <>

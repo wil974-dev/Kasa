@@ -5,7 +5,7 @@ import Collapse from '../../components/Collapse';
 import './AccomodationSheet.scss';
 import Tag from '../../components/Tag';
 import Rating from '../../components/Rating';
-
+import { Navigate } from 'react-router-dom';
 /**
  * Page AccomodationSheet
  * C'est la page pour afficher les information sur le logement sélectionner.
@@ -14,7 +14,13 @@ import Rating from '../../components/Rating';
  */
 function AccomodationSheet() {
     const { id } = useParams();
+
     const currentAccomodation = data.find((data) => data.id === id);
+
+    if (!currentAccomodation) {
+        return <Navigate to="/Error" />;
+    }
+
     return (
         <>
             <SlideShow
