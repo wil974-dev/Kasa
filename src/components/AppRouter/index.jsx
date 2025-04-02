@@ -9,7 +9,7 @@ import Layout from '../Layout';
 
 /**
  * Router du projet
- * @returns {JSX.Element} Le JSX du composant Collapse.
+ * @returns {JSX.Element} Le JSX du composant AppRouter.
  */
 function AppRouter() {
     return (

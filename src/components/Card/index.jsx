@@ -6,7 +6,7 @@ import './Card.scss';
  *
  * @param {Object} props - Les propriétés du composant Card.
  * @param {string} props.cover - L'url de l'image à afficher.
- * @param {string} props.title - Le titre de l'image pour l'attribut alt et l'afficher sur la card.
+ * @param {string} props.title - Le titre de l'image pour l'attribut alt et l'affiche sur la carte.
  * @returns {JSX.Element} Le JSX du composant Card.
  */
 function Card({ cover, title }) {

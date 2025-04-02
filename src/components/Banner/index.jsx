@@ -2,7 +2,7 @@ import './Banner.scss';
 
 /**
  * Composant Banner
- * Affiche une bannière avec une image et un titre(facultatif).
+ * Affiche une bannière avec une image et un titre (facultatif).
  *
  * @param {Object} props - Les propriétés du composant Banner.
  * @param {string} props.img - La source de l'image à afficher.

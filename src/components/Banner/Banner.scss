@@ -3,6 +3,9 @@
     height: 200px;
     border-radius: 10px;
     overflow: hidden;
+    @media (max-width: 375px) {
+        height: 130px;
+    }
     &__img {
         height: 100%;
         width: 100%;
@@ -18,5 +21,10 @@
         text-align: center;
         margin: 0;
         width: 100%;
+        @media (max-width: 375px) {
+            font-size: 24px;
+            text-align: left;
+            margin-left: 10px;
+        }
     }
 }

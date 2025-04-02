@@ -1,7 +1,5 @@
 .card {
     position: relative;
-    //min-height: 280px;
-    //min-width: 280px;
     aspect-ratio: 1/1;
     border-radius: 10px;
     overflow: hidden;
@@ -13,6 +11,7 @@
         font-weight: 700;
         font-size: 18px;
         color: white;
+        z-index: 2;
     }
     &__img {
         width: 100%;
@@ -22,7 +21,7 @@
     &:hover {
         cursor: pointer;
     }
-    &::after {
+    &:after {
         content: '';
         position: absolute;
         inset: 0; // top:0, right:0, bottom:0, left:0

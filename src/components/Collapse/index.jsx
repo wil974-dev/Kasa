@@ -3,7 +3,7 @@ import './Collapse.scss';
 
 /**
  * Composant Collapse
- * Affiche une menu déroulante qui s'ouvre et se ferme en réaction au clic.
+ * Affiche un menu déroulant qui s'ouvre et se ferme en réaction au clic.
  *
  * @param {Object} props - Les propriétés du composant Collapse.
  * @param {string} props.title - Le titre du menu déroulant.
@@ -21,7 +21,7 @@ function Collapse({ title, content }) {
      * Soit en liste si le titre est "Équipements" sinon il retourne le
      * contenu normalement.
      *
-     * @returns Retourne le contenue agencer en fonction de son contenu.
+     * @returns Retourne le contenu agencé en fonction de son type.
      */
     function printList() {
         if (title === 'Équipements') {
