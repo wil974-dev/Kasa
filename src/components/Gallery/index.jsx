@@ -18,7 +18,6 @@ function Gallery() {
                         key={logement.id}
                     >
                         <Card
-                            key={logement.id}
                             cover={logement.cover}
                             title={logement.title}
                             id={logement.id}
